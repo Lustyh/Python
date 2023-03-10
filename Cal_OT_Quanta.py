@@ -11,17 +11,20 @@ from pyquery import PyQuery as pq
 
 
 class Overtime():
-    def __init__(self) -> None:
+    def __init__(self,user,password) -> None:
         self.url = 'http://10.17.36.87/QSMCHR2005/Attn/Modify_Attandence_assistant_min.aspx?Flag=4&languageType=zh-CN'
-        self.user = 'A907A919'
-        self.pd = 'LH!1234567890'
+        self.user = user #'A907A919'
+        self.pd = password #'LH!1234567890'
     
     def LogInUrl(self):
+        """Login request"""
         self.response = requests.get(url=self.url,
                                      auth=HttpNtlmAuth(self.user,
                                                        self.pd
                                                        )
                                     )
+        
+        # only continue when the return code is 200.
         if 200 == self.response.status_code:
             print('connect successfully!')
             # print(self.response.headers)
@@ -31,6 +34,7 @@ class Overtime():
     
 
     def SaveHTML(self):
+        """Save HTML page at local"""
         self.text = pq(self.response.text)
         with open('html.txt','w+',encoding='utf-8')as f:
             f.write(str(self.text))
@@ -78,29 +82,11 @@ class Overtime():
 
 if __name__ == '__main__':
 
-    test = Overtime()
+    user = input('Please enter your username:').upper()
+    password = input('Please enter your Password:')
+    test = Overtime(user,password)
     test.main('span')
 
-
-    # url = 
-    # user = 'A907A919'
-    # password = 'Selswhjl455'
-    # response = requests.get(url=url, auth=HttpNtlmAuth(user, password))
-    # print(response.status_code)
-    # print(response.headers)
-    # text = pq(response.text)
-    # # print(text)
-    # with open('text.txt','w+',encoding='utf-8')as f:
-    #     f.write(str(text))
-    # create = text.find("span")
-    # create = list(create)
-    # for x,v in enumerate(create):
-    #     v = v.text
-    #     try:
-    #         if 'None' not in v:
-    #             print(v)
-    #     except:
-    #         pass
 
 
 
