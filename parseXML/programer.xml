@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--TS4-H Programmer, Tigo Energy, Inc.-->
+<Data type="TS4-H Programmer" formatVersion="2.0">
+  <Station ID="1" Location="Tigo" HW="1" SW="1.2" config="1.0" />
+  <DateTime TimeZone="Central Standard Time">2022-11-11_11-36-15</DateTime>
+  <TotalTestTime>18.7</TotalTestTime>
+  <DUT SN="00511T3322045009001212345" MAC="04C05B40021B0F36" Short_MAC="4-21B0F36R" Model="511" HW_ver="4.50" SW_ver="9.0012" Hw_str_for_user_data="ESO080V800W-H511.4.50" hex_file_name="Mnode_H9_0012.bin" Num_of_retries="1" />
+  <Result Code="PASS" />
+</Data>
