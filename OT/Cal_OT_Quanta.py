@@ -92,9 +92,10 @@ class Overtime():
 
 
 if __name__ == '__main__':
-
-    user = "A907A919"#input('Please enter your username:').upper()
-    password = 'LH#1234567890'#input('Please enter your Password:')
+    import sys
+    user = sys.argv[1]  #"A907A919"#input('Please enter your username:').upper()
+    password = sys.argv[2]  #'LH$1234567890'#input('Please enter your Password:')
+    print('userID:', user)
     VERSION = '1.0.0'
     print('Cal_OT_Version: ' + VERSION)
     test = Overtime(user,password)

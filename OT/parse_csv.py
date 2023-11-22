@@ -13,6 +13,7 @@ class OT_calculate():
             row = cv.readlines()
         for x in row[1:]:
             x = x.split(',')
+            # ['18', 'A907A919', '黄俊霖', '20230901', '0758', '2107', '0', 'D', 'None', 'None', 'None', 'N', 'N', 'None', 'None', 'None', 'None', '0', '0', '0', '0', '0', '0.00', 'None', 'None', '', 'None', '明细', 'A7359568', '0', 'N', '0.00', '0.00\r\n']
             if x[4] != 'None' and x[5] != 'None':
 
 
@@ -39,22 +40,33 @@ class OT_calculate():
                     ot_mins += ( (int(x[5][0:2]) * 60) + int(x[5][2:]) ) - 1050 - late_time
 
                 else:
-
+                    
                     #   holiday
-                    if  0 <= int(x[4][2:]) < 30 and 0 <= int(x[5][2:]) < 30 :
-                        x[4] = x[4][0:2] + '00'
-                        x[5] = x[5][0:2] + '00'
-                    elif 30 <= int(x[4][2:]) <= 59 and 30 <= int(x[5][2:]) <= 59:
-                        x[4] = x[4][0:2] + '30'
-                        x[5] = x[5][0:2] + '30'
+                    
 
+                    if 0 <= int(x[4][2:]) < 30:
+                        x[4] = x[4][0:2] + '30'
+                    else:
+                        if len(str(int(x[4][0:2]) + 1) ) == 1:
+                            x[4] = '0' + str(int(x[4][0:2]) + 1) + '00'
+                        else:
+                            x[4] = str(int(x[4][0:2]) + 1) + '00'
+
+                    if 0 <= int(x[5][2:]) < 30 :
+                        x[5] = x[5][0:2] + '00'
+                    else:
+                        x[5] = x[5][0:2] + '30'
 
                     print('--holiday overtime day--  ' + x[3] + '  start time: '+ x[4] + ' end time: ' + x[5]) 
                     # ot_mins = end(60 * h + mins) - start(60 * h + mins)  
-                    if int(x[5][0:2]) >= 13:
+                    
+                    if int(x[4][0:2]) <= 12 and int(x[5][0:2]) >= 13:
                         break_time = 60
                     else:
                         break_time = 0
+
+                    if int(x[5]) > 1730:
+                        break_time += 30
 
                     if 30 <= int(x[6]) <=59:
                         late_time = 60
@@ -62,6 +74,7 @@ class OT_calculate():
                         late_time = 30
                     else:
                         late_time = int(x[6])
+                    print(( (int(x[5][0:2]) * 60) + int(x[5][2:]) ) - ( (int(x[4][0:2]) * 60) + int(x[4][2:]) ) - break_time - late_time)
                     ot_mins += ( (int(x[5][0:2]) * 60) + int(x[5][2:]) ) - ( (int(x[4][0:2]) * 60) + int(x[4][2:]) ) - break_time - late_time
         
         ot_hours = ot_mins/60
