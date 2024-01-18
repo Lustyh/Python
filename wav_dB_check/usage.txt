@@ -1,0 +1,12 @@
+Get the dBFS through Fourier transform
+plot the result as the picture through matlab.
+
+1. python calc_wav_dbfs_v2.py [#1] [#2]
+## generate "wav dBFS result.txt"
+
+2. python plot.py [3] [4]
+
+## [1] wav file
+## [2] the dBFS range, para> "all"
+## [3] wav dBFS result.txt
+## [4] the dBFS interval on X axis
