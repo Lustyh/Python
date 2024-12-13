@@ -1,0 +1,8 @@
+{"2024_12_10": {"FDT-1": {"Type-C and DP Test": 10}}}
+{"2024_12_10": {"FDT": {"tamper_switch": 7, "msr_supply": 3}}}
+{"2024_12_10": {"FFT": {"check_rom_version": 27, "nfc_adc": 6, "TPFWcheck": 3}}}
+{"2024_12_10": {"FFT-5": {"voltage_check": 2}}}
+{"2024_12_10": {"FFT-3": {"Smart Card": 8, "SB_Touch_Controller_Test": 2}}}
+{"2024_12_10": {"FUT": {"headset_vol_up_button_test": 2, "right_left_headset_test": 1, "dmic_test": 3, "amic_test": 1, "Headset check in": 2}}}
+{"2024_12_10": {"FWT": {"Stop_tx": 1}}}
+{"2024_12_10": {"FMT": {"save_dmic_fmt_log": 6, "Sound check": 1}}}

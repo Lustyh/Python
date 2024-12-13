@@ -1,0 +1,24 @@
+{'2024_12_09': {'FDT-1': {'Type-C and DP Test': 12}}}
+{'2024_12_09': {'FDT': {'check_sb_cpuid': 3, 'check_lte_model_type': 1, 'tamper_switch': 4}}}
+{'2024_12_09': {'FFT': {'TPFWcheck': 3}}}
+{'2024_12_09': {'FFT-5': {'voltage_check': 1}}}
+{'2024_12_09': {'FFT-3': {'Smart Card': 17, 'SB_Touch_Controller_Test': 3, 'Pen_test': 3}}}
+{'2024_12_09': {'FUT': {'vol_up_button_test': 1, 'Headset check in': 10, 'amic_test': 2, 'headset_vol_up_button_test': 5, 'dmic_test': 17, 'right_left_headset_test': 1, 'Headset check out': 1}}}
+{'2024_12_09': {'FWT': {'wifi_5g_ant1': 1}}}
+{'2024_12_09': {'FMT': {'Sound check': 5, 'save_dmic_fmt_log': 5}}}
+{"2024_12_09": {"FDT-1": {"Type-C and DP Test": 12}}}
+{"2024_12_09": {"FDT": {"check_sb_cpuid": 3, "check_lte_model_type": 1, "tamper_switch": 4}}}
+{"2024_12_09": {"FFT": {"TPFWcheck": 3}}}
+{"2024_12_09": {"FFT-5": {"voltage_check": 1}}}
+{"2024_12_09": {"FFT-3": {"Smart Card": 17, "SB_Touch_Controller_Test": 3, "Pen_test": 3}}}
+{"2024_12_09": {"FUT": {"vol_up_button_test": 1, "Headset check in": 10, "amic_test": 2, "headset_vol_up_button_test": 5, "dmic_test": 17, "right_left_headset_test": 1, "Headset check out": 1}}}
+{"2024_12_09": {"FWT": {"wifi_5g_ant1": 1}}}
+{"2024_12_09": {"FMT": {"Sound check": 5, "save_dmic_fmt_log": 5}}}
+{"2024_12_09": {"FDT-1": {"Type-C and DP Test": 12}}}
+{"2024_12_09": {"FDT": {"check_sb_cpuid": 3, "check_lte_model_type": 1, "tamper_switch": 4}}}
+{"2024_12_09": {"FFT": {"TPFWcheck": 3}}}
+{"2024_12_09": {"FFT-5": {"voltage_check": 1}}}
+{"2024_12_09": {"FFT-3": {"Smart Card": 17, "SB_Touch_Controller_Test": 3, "Pen_test": 3}}}
+{"2024_12_09": {"FUT": {"vol_up_button_test": 1, "Headset check in": 10, "amic_test": 2, "headset_vol_up_button_test": 5, "dmic_test": 17, "right_left_headset_test": 1, "Headset check out": 1}}}
+{"2024_12_09": {"FWT": {"wifi_5g_ant1": 1}}}
+{"2024_12_09": {"FMT": {"Sound check": 5, "save_dmic_fmt_log": 5}}}

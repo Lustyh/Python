@@ -1,0 +1,56 @@
+{
+  Project: {
+    'X5A': {
+      'path': ['\\10.97.1.49\SEL_Monitor\X5A_Test_Logs\X5A\'],
+      'mode': 
+    },
+    'X59': {
+      'path': ['\\10.97.1.49\SEL_Monitor\X59_Test_Logs\X59\']
+    },
+    'X57': {
+      'path': ['\\10.97.1.49\SEL_Monitor\X57_Test_Logs\X57\']
+    },
+    'YJ3C': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3C_Test_Logs\YJ3C\']
+    },
+    'YJ3DGMC2': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3DGMC2_Test_Logs\YJ3DGMC2\']
+    },
+    'YJ3DHM3': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3DHM3_Test_Logs\YJ3DHM3\'],
+      'stations': [ 
+      'FDT-1', 
+      'FDT', 
+      'FFT', 
+      'FFT-5', 
+      'FFT-3', 
+      'FUT', 
+      'FWT', 
+      'FMT'
+      ],
+      'FailItem_Path': '\\10.97.1.47\SEL_Log\Clifford-SF\FailItem\',
+      'FPY_Path': '\\10.97.1.47\SEL_Log\Clifford-SF\FPY\'
+    },
+    'YJ3DHUB': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3DHUB_Test_Logs\YJ3DHUB\']
+    },
+    'YJ3E': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3E_Test_Logs\YJ3E\']
+    },
+    'YJ3ESM3': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ3ESM3_Test_Logs\YJ3ESM3\']
+    },
+    'YJ5APrint': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ5APrint_Test_Logs\YJ5APrint\']
+    },
+    'YJ7': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ7_Test_Logs\YJ7\']
+    },
+    'YJ7A': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ7A_Test_Logs\YJ7A\']
+    },
+    'YJ8': {
+      'path': ['\\10.97.1.49\SEL_Monitor\YJ8_Test_Logs\YJ8\']
+    },
+  }
+}

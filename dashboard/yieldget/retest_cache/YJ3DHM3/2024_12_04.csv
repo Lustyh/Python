@@ -1,0 +1,8 @@
+{"2024_12_04": {"FDT-1": {"Type-C and DP Test": 12}}}
+{"2024_12_04": {"FDT": {"msr_supply": 3, "check_sb_cpuid": 1, "tamper_switch": 4}}}
+{"2024_12_04": {"FFT": {"TPFWcheck": 3}}}
+{"2024_12_04": {"FFT-5": {"voltage_check": 3}}}
+{"2024_12_04": {"FFT-3": {"Pen_test": 6, "Smart Card": 5}}}
+{"2024_12_04": {"FUT": {"Headset check in": 4}}}
+{"2024_12_04": {"FWT": {"wifi_2.4g_ant1": 2, "wifi_5g_ant1": 2}}}
+{"2024_12_04": {"FMT": {}}}
